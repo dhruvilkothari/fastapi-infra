@@ -10,11 +10,10 @@ spec:
     spec:
       chart: ./charts/fastapi
       version: "*"
+      reconcileStrategy: Revision
       sourceRef:
         kind: GitRepository
         name: fastapi-infra
         namespace: flux-system
       interval: 1m
-  values:
-    replicaCount: 3
 
