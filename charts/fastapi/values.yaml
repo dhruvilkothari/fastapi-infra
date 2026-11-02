@@ -1,0 +1,11 @@
+replicaCount: 2
+
+image:
+  repository: local-registry:5000/fastapi-devops
+  tag: "c9aa60d6d002"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8000

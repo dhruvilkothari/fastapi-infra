@@ -1,0 +1,12 @@
+
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: fastapi-infra
+  namespace: flux-system
+spec:
+  interval: 1m
+  ref:
+    branch: master
+  url: https://github.com/dhruvilkothari/fastapi-infra.git
+
