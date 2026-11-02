@@ -2,7 +2,7 @@ replicaCount: 3
 
 image:
   repository: local-registry:5000/fastapi-devops
-  tag: "ce92223b76f4"
+  tag: "982d32b3ef46"
   pullPolicy: IfNotPresent
 
 service:
